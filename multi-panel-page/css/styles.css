@@ -1,0 +1,138 @@
+body {
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 80px;
+    line-height: 1;
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+}
+
+h3 {
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+    line-height: 1;
+    margin-bottom: 38px;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.content-column {
+    /* background-color: rgba(0,0,0,0.25); */
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 48px;
+    padding-bottom: 42px;
+}
+
+header {
+    /* background-color: rgba(255,0,0,0.25); */
+    background-image: url(../images/pikmin3.jpg);
+    background-size: cover;
+    background-position: center left;
+}
+
+header .content-column {
+    padding-top: 166px;
+    padding-bottom: 188px;
+}
+
+section:first-of-type {
+    background-color: forestgreen;
+}
+
+section:first-of-type img{
+    float: right;
+    border: 1px solid darkblue;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+section:nth-of-type(2) .content-column h3 {
+    margin-top: -2px;
+}
+section:nth-of-type(2) .content-column{
+    padding-top: 48px;
+    padding-bottom: 64px;
+}
+
+section:nth-of-type(2) {
+    background-color: burlywood;
+
+}
+
+.grid-container {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 420px 420px;
+    column-gap: 60px;
+    row-gap: 24px;
+}
+
+.grid-container li {
+    display: grid;
+    grid-template-columns: 200px 225px;
+    column-gap: 12px;
+    align-items: start;
+}
+
+.grid-container img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+/* .captions {
+    padding-top: 0px;
+} */
+
+.captions h4 {
+    margin: 5px 0 8px 0;
+    font-size: 20px;
+    line-height: 1;
+}
+
+section:last-of-type .content-column p {
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 36.5px;
+    margin: 17px auto;
+    max-width: 60ch;
+    padding-bottom: 40px;
+}
+
+section:last-of-type{
+    background-color: wheat;
+}
+
+/* section:last-of-type .content-column {
+    margin-bottom: 60px;
+} */
+
+footer {
+    margin-top: -7px;
+    background-color: forestgreen;
+    /* padding-top: 9px; */
+    color: white;
+    padding-bottom: 10px;
+}
