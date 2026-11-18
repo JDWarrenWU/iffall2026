@@ -1,0 +1,493 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  line-height: 1.6;
+  color: #1b1b1b;
+  background-color: #f8eee2;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+h1 {
+  color: #5a3220;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.1;
+  margin: 0 0 20px;
+}
+
+h2 {
+  color: #5a3220;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 0 0 16px;
+}
+
+h3 {
+  color: #5a3220;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+section {
+  padding: 50px 0;
+}
+
+/* Two columns */
+.columns {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.columns > div,
+.columns > figure {
+  flex: 1;
+}
+
+.logo {
+  background-color: #d7262c;
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+  font-style: italic;
+  text-decoration: none;
+  padding: 6px 16px;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+nav a {
+  margin-right: 18px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+  text-decoration: underline;
+  text-decoration-color: #d7262c;
+  text-decoration-thickness: 3px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #f1b8aa;
+  color: white;
+  font-weight: 800;
+  text-decoration: none;
+  padding: 10px 26px;
+  border: 3px solid white;
+  border-radius: 30px;
+}
+
+.button:hover {
+  background-color: #e89f8e;
+}
+
+.center {
+  text-align: center;
+}
+
+
+/*stripes*/
+
+.stripes {
+  flex-grow: 1;
+}
+
+.stripes div {
+  height: 14px;
+  border-bottom: 4px solid white;
+}
+
+.pink {
+  background-color: #f3c6bc;
+}
+
+.teal {
+  background-color: #3a8a76;
+}
+
+.red {
+  background-color: #d7262c;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background-color: white;
+  padding: 14px 24px;
+  border-bottom: 6px solid #d9d1c1;
+}
+
+
+/*sky and mt Fuji*/
+
+.sky {
+  background-color: #c6e3f6;
+  padding-top: 20px;
+}
+
+.sky-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mountain {
+  display: block;
+  width: 100%;
+  height: 280px;
+}
+
+
+/*convenience store*/
+
+.store {
+  background-color: #f3eee4;
+  padding-bottom: 30px;
+}
+
+.fascia {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  background-color: white;
+  border-top: 8px solid #d9d1c1;
+  border-bottom: 8px solid #d9d1c1;
+}
+
+.fascia .stripes div {
+  height: 20px;
+}
+
+.sign {
+  text-align: center;
+  padding: 6px 40px;
+}
+
+.sign-title {
+  color: #d7262c;
+  font-size: 40px;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.sign-subtitle {
+  color: #3a8a76;
+  font-weight: 900;
+  letter-spacing: 6px;
+  margin: 0;
+}
+
+/*three windows*/
+.windows {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 24px 0;
+}
+
+.window {
+  width: 240px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.window img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border: 8px solid white;
+  border-radius: 120px 120px 4px 4px;
+}
+
+.window:hover img {
+  border-color: #f3c6bc;
+}
+
+/*Teal*/
+
+.band {
+  background-color: #3a8a76;
+  color: white;
+}
+
+.band h2 {
+  color: white;
+}
+
+.lucky {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.big-japanese {
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 1;
+  writing-mode: vertical-rl;
+  text-shadow: 4px 4px 0 #d7262c;
+}
+
+
+/* photos */
+
+.photo {
+  margin: 0;
+  background-color: white;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transform: rotate(2deg);
+}
+
+.photo img {
+  display: block;
+  width: 100%;
+}
+
+.photo figcaption {
+  font-size: 13px;
+  padding-top: 8px;
+}
+
+.tilt-left {
+  transform: rotate(-2deg);
+}
+
+
+/*History*/
+
+.pink-page {
+  background-color: #f8e6e6;
+}
+
+.timeline {
+  display: flex;
+  border-top: 5px solid white;
+  margin-top: 30px;
+}
+
+.event {
+  flex: 1;
+  padding-right: 10px;
+  font-size: 14px;
+}
+
+.event b {
+  display: block;
+  font-size: 20px;
+}
+
+.dot {
+  width: 24px;
+  height: 24px;
+  margin-top: -15px;
+  margin-bottom: 8px;
+  background-color: #3a8a76;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+.note {
+  background-color: white;
+  border-left: 8px solid #d7262c;
+  border-radius: 0 14px 14px 0;
+  padding: 16px 22px;
+  margin-top: 24px;
+}
+
+
+/* Varieties */
+
+.blue-page {
+  background-color: #c6e3f6;
+}
+
+.white-title {
+  color: white;
+  text-shadow: 3px 3px 0 #1d3f6e;
+}
+
+.salmon-box {
+  background-color: #f1b8aa;
+  color: #1d3f6e;
+  padding: 26px;
+  border: 4px solid white;
+  border-radius: 24px;
+}
+
+/* The map: a picture with invisible "spots" on top of each region */
+.map {
+  position: relative;
+}
+
+.map img {
+  display: block;
+  width: 100%;
+}
+
+.spot {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Where each spot sits on the map (as % of the picture) */
+.hokkaido { left: 56%; top: 2%;  width: 26%; height: 22%; }
+.tohoku   { left: 54%; top: 27%; width: 11%; height: 26%; }
+.kanto    { left: 50%; top: 56%; width: 9%;  height: 12%; }
+.chubu    { left: 38%; top: 48%; width: 13%; height: 20%; }
+.kansai   { left: 29%; top: 66%; width: 10%; height: 12%; }
+.chugoku  { left: 12%; top: 64%; width: 16%; height: 8%;  }
+.shikoku  { left: 19%; top: 74%; width: 11%; height: 8%;  }
+.kyushu   { left: 4%;  top: 72%; width: 13%; height: 22%; }
+
+/* A white dot in the middle of each spot */
+.pin {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 4px solid #1d3f6e;
+  border-radius: 50%;
+}
+
+.spot:hover .pin {
+  background-color: #d7262c;
+}
+
+/* The info box is hidden until you hover over its spot */
+.info {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  width: 190px;
+  background-color: #f1b8aa;
+  color: #1d3f6e;
+  font-size: 14px;
+  padding: 10px 14px;
+  border: 3px solid white;
+  border-radius: 14px;
+}
+
+.spot:hover .info {
+  display: block;
+}
+
+.info ul {
+  margin: 6px 0 0;
+  padding-left: 18px;
+}
+
+/* The flavor wall */
+.flavors {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.flavors li {
+  padding: 6px 14px;
+  background-color: #f3c6bc;
+  color: #1b1b1b;
+  font-size: 14px;
+  font-weight: 700;
+  border: 2px solid #1b1b1b;
+  border-radius: 20px;
+}
+
+.flavors li:nth-child(2n) {
+  background-color: #fff3a8;
+}
+
+.flavors li:nth-child(3n) {
+  background-color: #c6e3f6;
+}
+
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 34px;
+  }
+
+  .columns,
+  .lucky,
+  .timeline {
+    flex-direction: column;
+  }
+
+  .topbar,
+  .sky-nav {
+    flex-wrap: wrap;
+  }
+
+  .topbar .stripes {
+    width: 100%;
+  }
+
+  .mountain {
+    height: 150px;
+  }
+
+  .sign {
+    padding: 6px 16px;
+  }
+
+  .sign-title {
+    font-size: 28px;
+  }
+
+  .windows {
+    gap: 10px;
+  }
+
+  .window {
+    font-size: 14px;
+  }
+
+  .window img {
+    height: 160px;
+    border-width: 5px;
+  }
+
+  .big-japanese {
+    font-size: 48px;
+    writing-mode: horizontal-tb;
+  }
+
+  .timeline {
+    border-top: none;
+  }
+
+  .dot {
+    margin-top: 10px;
+  }
+}
